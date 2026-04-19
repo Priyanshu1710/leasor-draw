@@ -1,0 +1,53 @@
+{
+  "name": "laser-draw",
+  "version": "1.0.0",
+  "description": "A lightweight React component for markdown rendering with laser pointer interaction.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+"types": "./dist/index.d.ts",
+"exports": {
+  ".": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.js"
+  },
+  "./style.css": "./dist/index.css"
+},
+
+  "sideEffects": ["*.css"],
+
+  "files": ["dist"],
+
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean --minify",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "lint": "tsc"
+  },
+
+  "keywords": [
+    "react",
+    "markdown",
+    "laser-pointer",
+    "presentation",
+    "reading-mode"
+  ],
+
+  "author": "Priyanshu (zyvio)",
+  "license": "MIT",
+
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+
+  "dependencies": {
+    "marked": "^12.0.1",
+    "lucide-react": "^0.363.0"
+  },
+
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.2"
+  }
+}
