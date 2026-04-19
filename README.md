@@ -118,4 +118,4 @@ If you want to contribute or experiment locally:
 
 MIT © [Priyanshu Gupta](https://github.com/Priyanshu1710) | [View on NPM](https://www.npmjs.com/package/laser-draw)
 
-# leasor-draw
+# laser-draw
