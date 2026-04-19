@@ -116,6 +116,6 @@ If you want to contribute or experiment locally:
 
 ## 📄 License
 
-MIT © [Priyanshu Gupta](https://github.com/Priyanshu1710)
+MIT © [Priyanshu Gupta](https://github.com/Priyanshu1710) | [View on NPM](https://www.npmjs.com/package/laser-draw)
 
 # leasor-draw
