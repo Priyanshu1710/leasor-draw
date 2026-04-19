@@ -36,7 +36,7 @@ pnpm add laser-draw
 import { Draw } from "laser-draw";
 import "laser-draw/style.css";
 
-const MyDoc = () => <Draw content="# Hello World" />;
+const App = () => <Draw />;
 ```
 
 ---
@@ -52,7 +52,7 @@ import "laser-draw/style.css";
 export default function App() {
   return (
     <div style={{ height: "100vh" }}>
-      <Draw content="## My Presentation Content" />
+      <Draw />
     </div>
   );
 }
@@ -73,12 +73,10 @@ export default function DocumentViewer() {
   return (
     <div className="container">
       {/* Your Editor or Controls */}
-      <button onClick={() => setDoc("# Updated Content 🚀")}>
-        Update Doc
-      </button>
+      <button onClick={() => setDoc("# Updated Content 🚀")}>Update Doc</button>
 
       {/* The Laser Draw Component */}
-      <Draw content={doc} />
+      <Draw />
     </div>
   );
 }
@@ -88,16 +86,16 @@ export default function DocumentViewer() {
 
 ## ⚙️ Props
 
-| Prop | Type | Default | Description |
-| :--- | :--- | :--- | :--- |
-| `content` | `string` | `""` | The raw markdown string to render. |
-| `className` | `string` | `""` | Optional CSS class for the container. |
+| Prop        | Type     | Default | Description                           |
+| :---------- | :------- | :------ | :------------------------------------ |
+| `content`   | `string` | `""`    | The raw markdown string to render.    |
+| `className` | `string` | `""`    | Optional CSS class for the container. |
 
 ---
 
 ## 🧠 Why this works
 
-Unlike static markdown viewers, **laser-draw** is built for engagement. 
+Unlike static markdown viewers, **laser-draw** is built for engagement.
 
 - **Shows real usage**: The interactive layer lives on top of your content without blocking it.
 - **Demonstrates practicality**: It's not just a viewer; it's a tool for communication.
@@ -118,5 +116,6 @@ If you want to contribute or experiment locally:
 
 ## 📄 License
 
-MIT © [Priyanshu (zyvio)](https://github.com/zyvio)
+MIT © [Priyanshu Gupta](https://github.com/Priyanshu1710)
+
 # leasor-draw
